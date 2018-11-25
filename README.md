@@ -1,3 +1,26 @@
+# 说明
+首次下载本项目时，先安装好Node.js及npm，再安装AngularJS
+node -v, npm -v
+我的Node.js版本10.13.0，npm版本6.4.1
+
+之后操作步骤如下
+
+git clone https://github.com/LAUHank/demo-ng-alain.git
+
+cd demo-ng-alain
+
+npm install # 这个过程可能会很久，如果出现 `npm audit fix` 一类的提示，忽略它
+
+ng serve # 启动开发服务器，浏览器访问  http://127.0.0.1:4200/
+
+或者
+
+ng build
+
+会在当前项目目录下生成一个 dist/ 目录
+
+此目录下有一个 demo-ng-alain 目录，就相当于WebRoot了
+
 # 参考
 https://ng-alain.com/docs/getting-started/zh
 
