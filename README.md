@@ -1,3 +1,27 @@
+# 参考
+https://ng-alain.com/docs/getting-started/zh
+
+你的本地环境需要安装 node 和 git。我们的技术栈基于 Typescript、Angular、g2、@delon 和 ng-zorro-antd，提前了解和学习这些知识会非常有帮助
+
+# 创建并初始化项目
+确保使用的是最新版本 Angular cli
+
+ng new demo-ng-alain --style less
+
+y
+
+# 安装ng-alain并启动开发服务器
+cd demo-ng-alain
+
+ng add ng-alain # 此处可能会卡住，可以Ctrl + C停止后多次重试。如果安装完成后有 npm audit fix，忽略它
+
+ng serve
+
+# 浏览器访问
+http://127.0.0.1:4200/
+
+用户名：admin  密码：ng-alain.com
+
 <p align="center">
   <a href="https://ng-alain.com">
     <img width="100" src="https://ng-alain.com/assets/img/logo-color.svg">
