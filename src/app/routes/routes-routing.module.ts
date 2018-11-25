@@ -18,6 +18,7 @@ import { UserLockComponent } from './passport/lock/lock.component';
 import { Exception403Component } from './exception/403.component';
 import { Exception404Component } from './exception/404.component';
 import { Exception500Component } from './exception/500.component';
+import {FrontComponent} from "../layout/front/front.component";
 
 const routes: Routes = [
   {
@@ -29,6 +30,15 @@ const routes: Routes = [
       { path: 'dashboard', component: DashboardComponent, data: { title: '仪表盘', titleI18n: 'dashboard' } },
       // 业务子模块
       // { path: 'widgets', loadChildren: './widgets/widgets.module#WidgetsModule' }
+      { path: 'sys', loadChildren: './sys/sys.module#SysModule' }
+    ]
+  },
+  // 自定义布局
+  {
+    path:'front',
+    component: FrontComponent,
+    children: [
+      { path: 'front', loadChildren: './front/front.module#FrontModule' }
     ]
   },
   // 全屏布局
