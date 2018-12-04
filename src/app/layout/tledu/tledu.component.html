@@ -1,0 +1,21 @@
+<nz-layout class="layout">
+  <nz-header style="position:fixed; z-index:1; width:100%;">
+    <div class="logo"></div>
+    <ul nz-menu [nzTheme]="'dark'" [nzMode]="'horizontal'" style="line-height: 64px; float: right; margin: 0px 100px 0px 0px;">
+      <li nz-menu-item class="menu-margin">首页</li>
+      <li nz-menu-item class="menu-margin">视频教学</li>
+      <li nz-menu-item class="menu-margin">学习路线图</li>
+    </ul>
+  </nz-header>
+  <nz-content style="padding:0 50px;">
+    <nz-breadcrumb style="margin:16px 0;">
+      <nz-breadcrumb-item>Home</nz-breadcrumb-item>
+      <nz-breadcrumb-item>List</nz-breadcrumb-item>
+      <nz-breadcrumb-item>App</nz-breadcrumb-item>
+    </nz-breadcrumb>
+    <div style="background:#fff; padding: 24px; min-height: 280px;">
+      <router-outlet></router-outlet>
+    </div>
+  </nz-content>
+  <nz-footer style="text-align: center;">Copyright © 2017-2025 石家庄天亮教育科技有限公司 备案号:冀ICP备17020003号</nz-footer>
+</nz-layout>

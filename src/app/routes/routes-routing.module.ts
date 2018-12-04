@@ -19,6 +19,7 @@ import { Exception403Component } from './exception/403.component';
 import { Exception404Component } from './exception/404.component';
 import { Exception500Component } from './exception/500.component';
 import {FrontComponent} from "../layout/front/front.component";
+import {TleduComponent} from "../layout/tledu/tledu.component";
 
 const routes: Routes = [
   {
@@ -35,10 +36,11 @@ const routes: Routes = [
   },
   // 自定义布局
   {
-    path:'front',
-    component: FrontComponent,
+    path:'tledu',
+    component: TleduComponent,
     children: [
-      { path: 'front', loadChildren: './front/front.module#FrontModule' }
+      { path: 'front', loadChildren: './front/front.module#FrontModule' },
+      { path: 'sys', loadChildren: './sys/sys.module#SysModule' }
     ]
   },
   // 全屏布局

@@ -39,6 +39,7 @@ const HEADERCOMPONENTS = [
 // passport
 import { LayoutPassportComponent } from './passport/passport.component';
 import { FrontComponent } from './front/front.component';
+import { TleduComponent } from './tledu/tledu.component';
 const PASSPORT = [
   LayoutPassportComponent
 ];
@@ -50,7 +51,8 @@ const PASSPORT = [
     ...COMPONENTS,
     ...HEADERCOMPONENTS,
     ...PASSPORT,
-    FrontComponent
+    FrontComponent,
+    TleduComponent
   ],
   exports: [
     ...COMPONENTS,
